@@ -1,3 +1,4 @@
+//elements selected for counting
 var input = document.querySelector('#input');
 var characterCount = document.querySelector('#characters-count');
 var wordCount = document.querySelector('#words-count');
@@ -9,6 +10,9 @@ var paragraphCount = document.querySelector('#paragraphs-count')
 var infoIcons = document.querySelectorAll('.info-icon');
 var tooltipTexts = document.querySelectorAll('.tooltip-text');
 
+
+
+// count logic
 input.addEventListener('input', function () {
     if (input.value) {
 
@@ -35,7 +39,7 @@ input.addEventListener('input', function () {
     }
 })
 
-
+//tool tip logic
 var toggleTooltip = function (tooltip) {
     if (tooltip.style.display === 'none') {
         tooltip.style.display = 'block';
@@ -43,6 +47,7 @@ var toggleTooltip = function (tooltip) {
         tooltip.style.display = 'none';
     }
 };
+
 
 infoIcons.forEach(function (icon, index) {
     icon.addEventListener('click', function () {
