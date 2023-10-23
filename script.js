@@ -4,6 +4,11 @@ var wordCount = document.querySelector('#words-count');
 var sentenceCount = document.querySelector('#sentences-count');
 var paragraphCount = document.querySelector('#paragraphs-count')
 
+
+//elements selected for tool tip
+var infoIcons = document.querySelectorAll('.info-icon');
+var tooltipTexts = document.querySelectorAll('.tooltip-text');
+
 input.addEventListener('input', function () {
     if (input.value) {
 
@@ -29,3 +34,18 @@ input.addEventListener('input', function () {
         paragraphCount.innerHTML = 0;
     }
 })
+
+
+var toggleTooltip = function (tooltip) {
+    if (tooltip.style.display === 'none') {
+        tooltip.style.display = 'block';
+    } else {
+        tooltip.style.display = 'none';
+    }
+};
+
+infoIcons.forEach(function (icon, index) {
+    icon.addEventListener('click', function () {
+        toggleTooltip(tooltipTexts[index]);
+    });
+});
