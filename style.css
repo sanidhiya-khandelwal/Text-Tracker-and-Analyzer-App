@@ -84,6 +84,62 @@ h1 {
 }
 
 
+/* media queries */
+
+/* info icon */
+@media all and (width<=468px) {
+    .info-icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media all and (width<=360px) {
+    .info-icon {
+        width: 12px;
+        height: 12px;
+    }
+
+}
+
+/* tooltip text*/
+@media all and (width<843px) {
+
+    .tooltip-text {
+        width: 15rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media all and (width<=625px) {
+
+    .tooltip-text {
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media all and (width<=476px) {
+
+    .tooltip-text {
+        width: 8rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media all and (width<=360px) {
+
+    .tooltip-text {
+        width: 1rem;
+        font-size: 0.5rem;
+    }
+}
+
+/* text-area */
+
 @media all and (width<650px) {
 
     .textarea,
