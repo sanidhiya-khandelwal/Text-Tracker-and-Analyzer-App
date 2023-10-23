@@ -10,6 +10,11 @@ var paragraphCount = document.querySelector('#paragraphs-count')
 var infoIcons = document.querySelectorAll('.info-icon');
 var tooltipTexts = document.querySelectorAll('.tooltip-text');
 
+//tooltip text should be hidden when the page loads for the first time
+//doing this thru js 
+tooltipTexts.forEach(function (tooltip) {
+    tooltip.style.display = 'none';
+});
 
 
 // count logic
